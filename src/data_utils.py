@@ -9,4 +9,5 @@ def get_shape(df: pd.DataFrame) -> tuple:
     :param df: Input DataFrame
     :return: A tuple containing the number of rows and columns
     """
-    return df.shape
+    r,c = df.shape()
+    return r,c
