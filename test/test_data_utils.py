@@ -1,7 +1,7 @@
 # tests/test_data_utils.py
 
 import pandas as pd
-from src.data_utils.py import get_shape
+from src.data_util import get_shape
 
 def test_get_shape():
     data = {
