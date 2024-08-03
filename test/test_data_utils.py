@@ -5,7 +5,7 @@ from src.data_util import get_shape
 
 def test_get_shape():
     data = {
-        'column1': [1, 2, 3],
+        'column1': [0, 2, 3],
         'column2': [4, 5, 6],
         'column3': [7, 8, 9]
     }
