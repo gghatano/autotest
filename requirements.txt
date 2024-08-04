@@ -1,4 +1,3 @@
 pandas
 pytest
 pytest-cov
-pytest-xml
