@@ -6,6 +6,7 @@ on: [push, pull_request]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -25,10 +26,11 @@ jobs:
         .venv/bin/uv pip install -r requirements.txt
     - name: Run tests and generate JUnit report
       run: |
-        .venv/bin/pytest tests/ --junitxml=reports/test-results.xml
+        mkdir -p tests/log
+        .venv/bin/pytest tests/ --junitxml=tests/log/test-results.xml
     - name: Upload test results
       uses: actions/upload-artifact@v2
       with:
         name: test-results
-        path: reports/test-results.xml
+        path: tests/log/test-results.xml
 
