@@ -1,0 +1,4 @@
+data1_path,data2_path,function_name,expected_value
+tests/data/sample_data1.csv,tests/data/sample_data2.csv,evaluate_function,42
+tests/data/sample_data3.csv,tests/data/sample_data4.csv,evaluate_function,42
+
